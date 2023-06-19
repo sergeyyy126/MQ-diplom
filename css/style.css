@@ -72,7 +72,6 @@ a {
   
 .item {
   position: relative;
-  display: flex;
 }
 
 .list-item {
@@ -865,7 +864,7 @@ img {
     }
 
     .burger {
-      display: flex;
+      display: block;
     }
 
     .header-heading {
