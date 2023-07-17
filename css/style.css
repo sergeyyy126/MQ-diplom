@@ -48,17 +48,22 @@ body {
 .noemi-logo {
   width: 179px;
 }
-  
+
+.header-menu-conteiner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .header-menu {
   position: relative;
   display: flex;
   justify-content: space-between;
   z-index: 2;
   
-  margin-left: auto;
-  margin-right: auto;
   padding-top: 27px;
-  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
   
 ul {
@@ -265,15 +270,21 @@ a {
   color: #b59f5b;
 }
 
+.content-conteiner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .content {
   display: flex;
   justify-content: space-between;
   
-  max-width: 1170px;
   margin-top: 63px;
   margin-bottom: 59px;
-  margin-left: auto;
-  margin-right: auto;
+
+  padding-left: 15px;
+  padding-right: 15px;
 }
   
 .main-content {
@@ -597,13 +608,18 @@ img {
     font-size: 12px;
     color: #b59f5b;
   }
-  
-.our-products {
-  max-width: 1170px;
+
+.our-products-conteiner {
+  max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 64px;
+}  
+
+.our-products {
   box-sizing: border-box;
+  margin-bottom: 64px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
   .title-our-products {
@@ -725,12 +741,14 @@ img {
   cursor: pointer;
 }
 
+.footer-social-conteiner {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
   .footer-social {
-    max-width: 1170px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 24px;
-  
+    padding: 25px 15px;
     background-color: #f4f7f6;
     text-align: center;
   }
