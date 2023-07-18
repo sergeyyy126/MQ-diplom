@@ -642,34 +642,25 @@ img {
 
   .products {
     display: flex;
-    justify-content: space-between;
-    max-width: 1170px;
-    
-    margin-top: 28px;
-    margin-left: auto;
-    margin-right: auto;
   }
 
   .product {
+    width: 33.33%;
+    margin: 29px 45px 84px;
     display: flex;
     flex-direction: column;
-    max-width: 300px;
   }
 
   .product-img {
-    max-width: 300px;
+    max-width: 100%;
   }
 
 .product-box {
+  display: flex;
+  flex-direction: column;
+  outline-offset: 20px;
+  outline: 3px solid #d3c59d;
   flex-grow: 1;
-  margin-top: -31px;
-  margin-left: -23px;
-  margin-right: -23px;
-  
-  border: 3px solid #b59f5b;
-  padding-top: 55px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .product-title {
