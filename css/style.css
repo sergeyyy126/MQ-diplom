@@ -159,11 +159,23 @@ a {
 .popup {
   position: fixed;
   width: 100%;
-  height: 100%;
+  height: 100vh;
 
   background: rgba(0, 0, 0, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  
+
+.popup-container {
+  width: 389px;
+  height: 588px;
+  box-sizing: border-box;
+  background: #ffffff;
+  padding: 52px 29px;
+}
+
 .trend-content {
   margin-left: auto;
   margin-right: auto;
@@ -748,11 +760,16 @@ img {
 }
 
   .footer-social {
+    display: flex;
+    justify-content: center;
     padding: 25px 15px;
     background-color: #f4f7f6;
-    text-align: center;
   }
-  
+
+.social {
+  display: flex;
+}  
+
   .social-link {
     display: inline-block;
     width: 20px;
