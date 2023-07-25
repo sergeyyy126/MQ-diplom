@@ -161,12 +161,15 @@ a {
   width: 100%;
   height: 100vh;
 
-  background: rgba(0, 0, 0, 0.5);
-
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   z-index: 3;
+  background: rgba(0, 0, 0, 0.5);
+  background-image: url(../svg/form-x.svg);
+  background-repeat: no-repeat;
+  background-size: 17px;
+  background-position: top 157px right 378px;
 }
 
 .popup-container {
@@ -174,11 +177,6 @@ a {
   box-sizing: border-box;
   background: #ffffff;
   padding: 52px 29px;
-
-  background-image: url(../svg/form-x.svg);
-  background-repeat: no-repeat;
-  background-size: 17px;
-  background-position: top -10px right;
 }
 
 .title-feedback {
@@ -193,13 +191,15 @@ a {
   content: "";
   display: block;
   width: 66px;
-  margin: 7px auto 25px;
+  margin: 7px auto 27px;
   border-bottom: 3px solid #e1d9bd;
 }
 
 .field-question-feedback {
   width: 100%;
   height: 48px;
+  margin-top: 9px;
+  margin-bottom: 33px;
   padding: 18px;
   background-color: #f4f7f6;
   border: none;
@@ -213,6 +213,7 @@ a {
 
 .mailing-feedback-hint {
   display: block;
+  margin-bottom: 9px;
 }
 
 .radio-group-text-yes::before {
@@ -246,11 +247,15 @@ a {
   background-size: 20px;
 }
 
+.radio-conteiner {
+  margin-bottom: 33px;
+}
+
 .radio {
   display: none;
 }
 
-.comment-feedback-hint {
+.comment-feedback-hint-textarea {
   width: 100%;
   max-width: 330px;
   min-height: 130px;
@@ -258,14 +263,14 @@ a {
   background-color: #f4f7f6;
   border: none;
   box-sizing: border-box;
-
+  margin-top: 10px;
+  margin-bottom: 26px;
   padding: 18px;
 }
 
 .button-feedback {
   width: 100%;
   height: 48px;
-  margin-top: 16px;
   font-family: "Open Sans", sans-serif;
   background-color: #b59f5b;
   font-size: 14px;
@@ -861,16 +866,20 @@ img {
   margin-right: auto;
 }
 
-  .footer-social {
-    display: flex;
-    justify-content: center;
-    padding: 25px 15px;
-    background-color: #f4f7f6;
-  }
+.footer-social {
+  display: flex;
+  justify-content: center;
+  padding: 25px 15px;
+  background-color: #f4f7f6;
+}
 
 .social {
   display: flex;
 }  
+
+.social-item {
+  margin-right: 30px;
+}
 
   .social-link {
     display: inline-block;
@@ -882,12 +891,10 @@ img {
   }
   
   .social-link-dribbble {
-    margin-right: 30px;
     background-image: url(../svg/001-dribbble.svg);
   }
   
   .social-link-pinterest {
-    margin-right: 30px;
     background-image: url(../svg/002-pinterest.svg);
   }
   
