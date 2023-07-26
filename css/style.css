@@ -166,13 +166,11 @@ a {
   align-items: center;
   z-index: 3;
   background: rgba(0, 0, 0, 0.5);
-  background-image: url(../svg/form-x.svg);
-  background-repeat: no-repeat;
-  background-size: 17px;
-  background-position: top 157px right 378px;
 }
 
 .popup-container {
+  position: fixed;
+  top: 240px;
   max-width: 389px;
   box-sizing: border-box;
   background: #ffffff;
@@ -193,6 +191,16 @@ a {
   width: 66px;
   margin: 7px auto 27px;
   border-bottom: 3px solid #e1d9bd;
+}
+
+.popup-close {
+  position: absolute;
+  top: -28px;
+  right: 0px;
+  height: 20px;
+  width: 20px;
+  background-image: url(../svg/form-x.svg);
+  background-repeat: no-repeat;
 }
 
 .field-question-feedback {
@@ -363,19 +371,18 @@ a {
 
 .heading-popular-article {
   position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: flex-end;
+  margin-top: 73px;
+  margin-left: 20px;
+  margin-right: 20px;
   width: 370px;
   box-sizing: border-box;
-    
-  padding-top: 37px;
-  padding-bottom: 37px;
-  padding-left: 32px;
-  padding-right: 32px;
+  padding: 38px 20px 12px 20px;
   z-index: 2;
   
   border: 3px solid #b59f5b;
-
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .category-trend {
@@ -921,6 +928,17 @@ img {
   }
 
   @media (min-width: 641px) and (max-width: 1200px) {
+    .popup-container {
+      position: fixed;
+      top: 236px;
+    }
+    
+    .popup-close {
+      height: 28px;
+      width: 28px;
+      top: -35px;
+    }
+
     .header {
       background-image: url(../images/banner-bg-tablet.jpg);
     }
@@ -997,6 +1015,17 @@ img {
   }
 
   @media (max-width: 640px) {
+    .popup-container {
+      position: fixed;
+      top: 74px;
+    }
+
+    .popup-close {
+      top: -33px;
+      height: 28px;
+      width: 28px;
+    }
+
     .header {
       background-image: url(../images/banner-mobile.jpg);
       background-size: cover;
